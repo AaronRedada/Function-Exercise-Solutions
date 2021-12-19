@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int rootCalc(double x) {
+
+    for (double z = 1; z <= 10; z++) {
+        double y = pow(x, z);
+        cout << x << " to the power of " << z << " = " << y << endl;
+    }
+    return x;
+}
+
+int main()
+{
+    double num;
+    cout << "Enter a Number:\n";
+    cin >> num;
+    cout << endl;
+
+    rootCalc(num);
+    return 0;
+}
